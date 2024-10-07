@@ -1,1 +1,5 @@
 # TravelApp
+
+```
+npm i
+```
