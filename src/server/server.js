@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 });
 
 const getCoordinates = async (req, res) => {
-    const location = req.body.city;
+    const location = req.body.location;
     const geonamesUrl = `http://api.geonames.org/searchJSON?q=${location}&maxRows=1&username=${process.env.GEONAMES_USERNAME}`;
     try {
         const response = await axios.get(geonamesUrl);
@@ -45,7 +45,7 @@ const getWeather = async (req, res) => {
 };
 
 const getImage = async (req, res) => {
-    const location = req.body.city;
+    const location = req.body.location;
     const pixabayUrl = `https://pixabay.com/api/?key=${process.env.PIXABAY_API_KEY}&q=${location}&image_type=photo`;
     try {
         const response = await axios.get(pixabayUrl);
