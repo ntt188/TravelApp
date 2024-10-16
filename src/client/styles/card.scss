@@ -1,0 +1,37 @@
+.card {
+    margin: 40px auto 0;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 70%;
+    grid-template-areas: 
+    "inf img"
+    "wt img";
+    display: none;
+    color: #fff;
+}
+
+#countdown-result {
+    grid-area: inf;
+    padding: 10px;
+}
+
+#weather-result {
+    grid-area: wt;
+    padding: 10px;
+}
+
+#image-result {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-result img {
+    width: 260px;
+    border-radius: 5px;
+}

@@ -6,6 +6,36 @@
     <title>Travel App</title>
 </head>
 <body>
-    hi
+    <div class="container">
+        <header>
+            <h1>Travel</h1>
+        </header>
+        <!-- Input -->
+        <form id="travel-form">
+            <label for="location">Enter your destination:</label>
+            <input type="text" id="location" name="location" required>
+            
+            <label for="date">Departure date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Get Weather and Image</button>
+        </form>
+        <!-- Output -->
+        <div class="results">
+            <div class="card" >
+                <div id="countdown-result">
+                    <h3>Trip Information</h3>
+                    <p id="countdown-location"></p>
+                </div>
+                <div id="weather-result">
+                    <h3>Weather Forecast</h3>
+                    <p id="weather-data"></p>
+                </div>
+                <div id="image-result">
+                    <img id="location-image" src="" alt="Location Image">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,26 @@
+@media (max-width: 739px) {
+    .card {
+        margin-top: 20px;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 0;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 50% 30%;
+        grid-template-areas: 
+        "inf"
+        "img"
+        "wt";
+        color: #0e122d;
+    }
+
+    #countdown-result, 
+    #weather-result {
+        text-align: center;
+    }
+
+    #image-result img {
+        width: auto;
+        height: 150px;
+        border-radius: 5px;
+    }
+}
