@@ -1,94 +1,94 @@
 # Travel App
 
-## Mô tả
+## Description
 
-**Travel App** là một ứng dụng cho phép người dùng nhập địa điểm và ngày khởi hành để nhận dự báo thời tiết và hình ảnh liên quan đến địa điểm đó. Ứng dụng sử dụng các API sau để lấy thông tin:
+**Travel App** is an application that allows users to input a location and departure date to receive weather forecasts and related images for that location. The app uses the following APIs to gather information:
 
-- **GeoNames API**: Để lấy tọa độ (lat, lng) dựa trên tên thành phố.
-- **Weatherbit API**: Để nhận dự báo thời tiết hiện tại và trong tương lai dựa trên tọa độ.
-- **Pixabay API**: Để hiển thị hình ảnh liên quan đến địa điểm.
+- **GeoNames API**: To get coordinates (lat, lng) based on the city name.
+- **Weatherbit API**: To receive current and future weather forecasts based on the coordinates.
+- **Pixabay API**: To display images related to the location.
 
-## Chức năng chính
+## Main Features
 
-1. Nhập địa điểm và ngày khởi hành.
-2. Nếu chuyến đi diễn ra trong vòng một tuần, nhận được dự báo thời tiết hiện tại.
-3. Nếu chuyến đi diễn ra trong tương lai xa hơn một tuần, nhận được dự báo thời tiết cho ngày cụ thể.
-4. Hiển thị hình ảnh liên quan đến địa điểm.
+1. Input location and departure date.
+2. If the trip is within a week, receive the current weather forecast.
+3. If the trip is more than a week away, receive the weather forecast for the specific date.
+4. Display images related to the location.
 
-## Cài đặt và chạy ứng dụng
+## Installation and Running the Application
 
-### Yêu cầu
+### Requirements
 
 - Node.js (>= v14.0.0)
 - npm (>= 6.0.0)
 
-### Các bước cài đặt
+### Installation Steps
 
-1. **Clone repository:**
+1. **Clone the repository:**
 
     ```bash
     git clone https://github.com/ntt188/TravelApp.git
     cd TravelApp
     ```
 
-2. **Cài đặt các package cần thiết:**
+2. **Install necessary packages:**
 
     ```bash
     npm i
     ```
 
-3. **Cấu hình file `.env`:**
+3. **Configure the `.env` file:**
 
-    Tạo một file .env trong thư mục gốc của dự án và thêm các biến môi trường sau:
+    Create a `.env` file in the root directory of the project and add the following environment variables:
     ```bash
     GEONAMES_USERNAME=your_geonames_username
     WEATHERBIT_API_KEY=your_weatherbit_api_key
     PIXABAY_API_KEY=your_pixabay_api_key
     ```
-    Thay thế `your_geonames_username`, `your_weatherbit_api_key`, và `your_pixabay_api_key` bằng giá trị API key của bạn.
+    Replace `your_geonames_username`, `your_weatherbit_api_key`, and `your_pixabay_api_key` with your own API key values.
 
-4. **Chạy ứng dụng trong môi trường phát triển:**
+4. **Run the application in development mode:**
 
-    Chạy lệnh sau để khởi động server trong chế độ phát triển:
+    Run the following command to start the server in development mode:
     ```bash
     npm run build-dev
     ```
-    Server sẽ chaỵ tại `http://localhost:8081`.
+    The server will run at `http://localhost:8081`.
 
-5. **Xây dựng ứng dụng cho môi trường sản xuất:**
+5. **Build the application for production:**
 
-    Để build ứng dụng cho môi trường sản xuất:
+    To build the application for production:
     ```bash
     npm run build-prod
     ```
 
-6. **Chạy ứng dụng với Nodemone (tự động restart khi có thay đổi):**
+6. **Run the application with Nodemon (auto-restart on changes):**
     ```bash
     npm start
     ```
 
 ## Testing
 
-    Dự án đã bao gồm các bài kiểm tra **unit test** với **Jest**. Để chạy test, bạn có thể sử dụng lệnh sau:
+    The project includes **unit tests** with **Jest**. To run the tests, you can use the following command:
     ```bash
     npm run test
     ```
 
-## Các công nghệ sử dụng
+## Technologies Used
 
-- **Node.js**: Môi trường chạy Javascript.
-- **Express.js**: Framewỏk để xây dựng server.
-- **Axios**: Thư viện HTTP client để gửi yêu cầu đến các API.
-- **Webpack**: Công cụ đóng gói mã nguồn.
-- **Sass**: CSS với các tính năng nâng cao.
-- **Jest**: Framework để kiểm thử.
+- **Node.js**: JavaScript runtime environment.
+- **Express.js**: Framework for building the server.
+- **Axios**: HTTP client library for making API requests.
+- **Webpack**: A tool for bundling source code.
+- **Sass**: CSS with advanced features.
+- **Jest**: A testing framework.
 
-## Tài nguyên API
+## API Resources
 
 1. **GeoNames API**: https://www.geonames.org/
 2. **Weatherbit API**: https://www.weatherbit.io/
 3. **Pixabay API**: https://pixabay.com/api/docs/
 
-## Tác giả
+## Author
 
 Nguyen Thanh Thang
